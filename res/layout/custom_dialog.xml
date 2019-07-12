@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/round_coner">
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/coner_background">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="@color/fontColor"
+            android:textSize="20sp"/>
+            <!--android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/NotTransparent"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textColor="@color/fontColor"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bottom_line"
+            android:text="@string/Ensure"
+            android:textColor="@color/DodgerBlue3"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

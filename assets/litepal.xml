@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--数据库名-->
+    <dbname value="IOT"></dbname>
+    <!--数据库版本号-->
+    <version value="1"></version>
+    <!--映射模型，稍后用到-->
+    <list>
+
+        <mapping class="com.cuanbo.cb_iot.Model.Meeting"/>
+        <mapping class="com.cuanbo.cb_iot.Model.MeetingRoom"/>
+        <mapping class="com.cuanbo.cb_iot.Model.LoginUser"/>
+        <mapping class="com.cuanbo.cb_iot.Model.MeetingSetting"/>
+        <mapping class="com.cuanbo.cb_iot.Model.LocalUserMsg"/>
+        <mapping class="com.cuanbo.cb_iot.Model.ChatMsg"/>
+    </list>
+</litepal>

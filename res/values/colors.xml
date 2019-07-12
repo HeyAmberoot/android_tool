@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#FF0000</color>
+    <color name="FullTransparent">#00000000</color>
+    <color name="HalfTransparent">#0b000000</color>
+    <color name="bigHalfTransparent">#0bb00000</color>
+    <color name="NotTransparent">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="CadetBlue3">#35575b</color>
+    <color name="DodgerBlue3">#aeceec</color>
+    <color name="fontColor">#2b2d2e</color>
+    <color name="Gainsboro">#DCDCDC</color>
+    <color name="gray71">#B5B5B5</color>
+    <color name="gray81">#CFCFCF</color>
+    <color name="gray51">#0e0d0d</color>
+    <color name="gray91">#E8E8E8</color>
+    <color name="mainColor">#1b70c5</color>
+    <color name="DodgerBlue6">#cbe0f4</color>
+    <color name="RoyalBlue">#436EEE</color>
+    <color name="Gold">#FFD700</color>
+    <color name="MedSpringGreen">#00FA9A</color>
+    <color name="OliverDrab1">#C0FF3E</color>
+    <color name="Goldenrod1">#FFC125</color>
+    <color name="LightSlateGray">#778899</color>
+    <color name="CadetBlue4">#53868B</color>
+    <color name="PaleGreen1">#9AFF9A</color>
+    <color name="Blue3">#e3e9ed</color>
+</resources>

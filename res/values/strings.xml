@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WisRoom</string>
+    <string name="Ensure">Ensure</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="downloadTip">连接服务器成功后，即可接收工程文件</string>
+    <string name="InputIP">请输入IP地址</string>
+    <string name="Connect">连接</string>
+    <string name="DeviceResolution">设备分辨率（Width*Height）:</string>
+    <string name="NotConnect">未连接</string>
+    <string name="ConnectSuccess">连接服务器成功！</string>
+    <string name="Disconnect">与服务器断开连接</string>
+    <string name="ReceivedData">"已接收到数据 "</string>
+    <string name="WatingReceive">连接服务器成功，等待接收工程文件</string>
+    <string name="DownloadInterrupt">下载已被中断</string>
+    <string name="StartDownload">开始下载！</string>
+    <string name="Downloading">正在下载工程文件</string>
+    <string name="ErrorFile">工程文件错误，请重新下载！</string>
+    <string name="DownloadComplete">下载工程文件完成！</string>
+    <string name="DownloadNotComplete">工程文件还未下载完，确定要现在返回吗？</string>
+</resources>

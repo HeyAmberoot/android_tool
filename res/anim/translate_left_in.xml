@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- translate:位置转移动画效果 -->
+    <!-- 
+    fromXDelta 属性设置动画起始时X坐标的位置
+    toXDelta 属性设置动画结束时X坐标的位置
+    fromYDelta 属性设置动画起始时Y坐标的位置
+    toYDelta 属性设置动画结束时Y坐标的位置
+    duration 属性指定动画持续时间，以毫秒为单位 -->
+    <translate
+        android:duration="500"
+        android:fromXDelta="-100%p"
+        android:toXDelta="0" />
+
+
+</set>
