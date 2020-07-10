@@ -1,32 +1,75 @@
-package com.example.Application;
+package com.example.cuanbo.Tool;
+
+import android.app.Activity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
 /**
- * Í¨¹ıÒ»¸öListÀ´Ôİ´æ»î¶¯£¬È»ºóÌá¹©Ò»¸öaddActivity()·½·¨ÓÃÓÚÏòListÌí¼ÓÒ»¸ö»î¶¯£¬
- * Ìá¹©ÁËÒ»¸öremoveActivity£¨£©·½·¨ÓÃÓÚ´ÓListÖĞÒÆ³ı»î¶¯£¬
- * Ìá¹©Ò»¸öfinishAll()·½·¨ÓÃÓÚ½«ListÖĞ´æ´¢µÄ»î¶¯È«²¿Ïú»Ù¡£
+ * Created by xww on 18/3/29.
  */
+
 public class ActivityCollector {
-	public static List<Activity> activities=new ArrayList<>();
-	
-	public static void addActivity(Activity activity) {
-		activities.add(activity);
-	}
-	
-	public static void removeActivity(Activity activity) {
-		activities.remove(activity);
-	}
-	
-	public static void finishAll() {//Ïú»ÙËùÓĞ»î¶¯£¬¿ÉÔÚÈÎºÎµØ·½ÍË³ö³ÌĞò
-		for(Activity activity:activities){
-			if (!activity.isFinishing()) {
-				activity.finish();
-			}
-		}
-		activities.clear();
-	}
+    public static List<Activity> activities=new ArrayList<>();
+
+    public static void addActivity(Activity activity) {
+        activities.add(activity);
+    }
+
+    public static void removeActivity(Activity activity) {
+
+        activities.remove(activity);
+        if (!activity.isFinishing()) {
+            activity.finish();
+        }
+    }
+
+    public static void finishAll() {
+        for(Activity activity:activities){
+            if (!activity.isFinishing()) {
+                activity.finish();
+            }
+        }
+        activities.clear();
+    }
+
+    /**
+     * å…³é—­æŒ‡å®šçš„Activity
+     * @param activityName éœ€è¦å…³é—­çš„ActivityåŒ…åç±»å
+     * */
+    public static void finishOneActivity(String activityName){
+        //åœ¨activitiesé›†åˆä¸­æ‰¾åˆ°ç±»åä¸æŒ‡å®šç±»åç›¸åŒçš„Activityå°±å…³é—­
+        for (Activity activity : activities){
+            String name= activity.getClass().getName();//activityçš„åŒ…å+ç±»å
+            if(name.equals(activityName)){
+                if(activity.isFinishing()){
+                    //å½“å‰activityå¦‚æœå·²ç»Finishï¼Œåˆ™åªä»activitiesæ¸…é™¤å°±å¥½äº†
+                    activities.remove(activity);
+                } else {
+                    //æ²¡æœ‰Finishåˆ™Finish
+                    activity.finish();
+                }
+            }
+        }
+    }
+
+    /**
+     * åªä¿ç•™æŸä¸ªActivityï¼Œå…³é—­å…¶ä»–æ‰€æœ‰Activity
+     * @param activityName è¦ä¿ç•™çš„Activityç±»å
+     * */
+    public static void finishOtherActivity(String activityName){
+        for (Activity activity : activities){
+            String name= activity.getClass().getName();//activityçš„ç±»å
+            if(!name.equals(activityName)){
+                if(activity.isFinishing()){
+                    //å½“å‰activityå¦‚æœå·²ç»Finishï¼Œåˆ™åªä»activitiesæ¸…é™¤å°±å¥½äº†
+                    activities.remove(activity);
+                } else {
+                    //æ²¡æœ‰Finishåˆ™Finish
+                    activity.finish();
+                }
+            }
+        }
+    }
 
 }
